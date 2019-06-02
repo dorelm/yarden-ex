@@ -1,0 +1,4 @@
+1;2;my radio;RADIO_BUTTON;FM,AM
+2;1;my text;TEXT_INPUT;first text
+1;1;my select;SELECT;channel1,channel2
+2;2;my checkbox;CHECKBOX;true
