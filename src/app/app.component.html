@@ -1,0 +1,4 @@
+<div class="items">
+    <app-item *ngFor="let item of items" class="item" 
+    [item]="item" [style.grid-row]="item.row" [style.grid-column]="item.col"></app-item>
+</div>

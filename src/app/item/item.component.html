@@ -1,0 +1,27 @@
+<!-- In order to make it cleaner- 
+  load the elements dynamically according to the given type-->
+<div class="item-container">
+  <span class="title"> {{ item.label }} </span>
+
+  <div *ngIf="item.type === 'RADIO_BUTTON'" class="radio-container">
+    <div *ngFor="let val of item.values" class="radio-values">
+      <input type="radio" name="item.label" value="val"> {{ val }} <br>
+    </div>
+  </div>
+
+  <div *ngIf="item.type === 'TEXT_INPUT'" class="text-container">
+    <input type="text" name="item.label" value="{{item.values[0]}}"><br>
+  </div>
+
+  <div *ngIf="item.type === 'SELECT'" class="select-container">
+    <select>
+      <option *ngFor="let val of item.values" value="{{ val }}"> {{ val }} </option>
+    </select>
+  </div>
+
+  <div *ngIf="item.type === 'CHECKBOX'" class="checkbox-container">
+      <div *ngFor="let val of item.values" class="checkbox-values">
+        <input type="checkbox" name="item.label" value="val"> {{ val }} <br>
+      </div>
+  </div>
+</div>

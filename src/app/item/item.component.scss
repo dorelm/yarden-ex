@@ -1,0 +1,26 @@
+.item-container {
+    height: 100%;
+    width: 99%;
+    background-color: lightgrey;
+    border: 2px solid black;
+    text-align: center;
+
+    .title {
+        height: 25%;
+        width: 100%;
+        display: block;
+        font-size: 1.5em;
+        font-weight: bold;
+        margin-bottom: 0.4em;
+        padding-top: 0.5em;
+    }
+
+    .radio-container, .text-container, .select-container, .checkbox-container {
+        height: 60%;
+        width: 100%;
+    }
+
+    .text-container > input {
+        width: 40%;
+    }
+}
